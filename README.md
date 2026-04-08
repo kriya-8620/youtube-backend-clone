@@ -83,6 +83,36 @@ This project implements core YouTube-like backend features including authenticat
 - Cloud-based storage support
 
 ---
+## 📡 API Endpoints
+
+### 🔐 Authentication
+
+| Method | Endpoint | Description |
+|-------|----------|-------------|
+| POST | /api/users/register | Register new user |
+| POST | /api/users/login | Login user |
+| POST | /api/users/logout | Logout user |
+| POST | /api/users/refresh-token | Refresh JWT token |
+
+---
+
+### 🎬 Video APIs
+
+| Method | Endpoint | Description |
+|-------|----------|-------------|
+| POST | /api/videos/upload | Upload video |
+| GET | /api/videos | Get all videos |
+| DELETE | /api/videos/:id | Delete video |
+
+---
+
+### ❤️ Interaction APIs
+
+| Method | Endpoint | Description |
+|-------|----------|-------------|
+| POST | /api/videos/:id/like | Like video |
+| POST | /api/videos/:id/comment | Comment video |
+| DELETE | /api/comments/:id | Delete comment |
 
 ## ⚙️ Installation
 
